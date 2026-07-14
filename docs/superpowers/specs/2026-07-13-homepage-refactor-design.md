@@ -78,7 +78,7 @@ Nenhum dado de contato existe no HTML servido nem em literal greppável no fonte
    `index.html` ou atributos.
 2. **Codificação + fragmentação** — e-mail e número armazenados em `contact.js`
    como fragmentos codificados (Base64 invertido + XOR simples), montados apenas
-   em runtime. Strings como `99811` ou `agencia@` não existem literalmente em
+   em runtime. Nenhum fragmento do número ou do e-mail existe literalmente em
    nenhum arquivo do repositório público.
 3. **Revelação por interação** — e-mail aparece como botão "Mostrar e-mail"; o
    `mailto:` só é montado e inserido no DOM no clique. A URL `wa.me` (número

@@ -556,7 +556,7 @@ main h2 {
 
 Run (Git Bash, na raiz):
 ```bash
-grep -rn -e "99811" -e "4153" -e "agencia@" --include="*.html" --include="*.css" --include="*.js" --include="*.md" --include="*.json" .
+grep -rn -e "998""11" -e "41""53" -e "agencia""@" --include="*.html" --include="*.css" --include="*.js" --include="*.md" --include="*.json" .
 ```
 Expected: nenhuma linha. (O prefixo `https://wa.me/` sem número em `contact.js` e menções ao subdomínio `agencia.romualdoag.com.br` são permitidos — não são dados de contato.)
 
@@ -703,7 +703,7 @@ git commit -m "Estrutura .claude particionado e convencao de pesquisas"
 
 ```bash
 node tests/contact.test.js
-grep -rn -e "99811" -e "4153" -e "agencia@" --include="*.html" --include="*.css" --include="*.js" --include="*.md" --include="*.json" .
+grep -rn -e "998""11" -e "41""53" -e "agencia""@" --include="*.html" --include="*.css" --include="*.js" --include="*.md" --include="*.json" .
 git status --short
 ```
 Expected: teste passa (exit 0); grep sem resultados; working tree limpo.
