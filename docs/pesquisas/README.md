@@ -5,4 +5,4 @@ Convenções em `.claude/rules/pesquisa.md`.
 
 | Tópico | Pasta | Data |
 | --- | --- | --- |
-| _(nenhum ainda)_ | | |
+| Operadoras B2B que aceitam CNPJ MEI | [operadoras-cadastro-mei](operadoras-cadastro-mei/) | 2026-07-14 |
