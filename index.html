@@ -3,180 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AG Soluções & Viagens - Tecnologia e Turismo corporativo.">
-    <title>AG Soluções & Viagens</title>
-    <style>
-        /* Reset básico */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
-            /* BACKGROUND: Baseado na cor Tech (Azul Profundo) da sua marca */
-            background: radial-gradient(circle at center, #0047AB 0%, #0E2F44 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            color: #333;
-        }
-
-        /* Container com efeito sutil de profundidade */
-        .container {
-            background: rgba(255, 255, 255, 0.95); /* Branco com leve transparência */
-            border-radius: 24px;
-            padding: 60px 40px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            text-align: center;
-            max-width: 480px;
-            width: 100%;
-            border-top: 4px solid #FF5F00; /* Detalhe laranja da marca no topo */
-            transition: transform 0.3s ease;
-        }
-
-        .container:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Estilo para a Logo */
-        .logo-area {
-            margin-bottom: 30px;
-        }
-        
-        .logo-img {
-            max-width: 250px;
-            height: auto;
-            /* Se não tiver a imagem ainda, isso segura o espaço */
-            min-height: 100px; 
-            display: inline-block;
-        }
-
-        h1 {
-            color: #0E2F44; /* Azul escuro da marca */
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            line-height: 1.2;
-            font-weight: 700;
-        }
-
-        .subtitle {
-            color: #555;
-            font-size: 1.1em;
-            margin-bottom: 40px;
-            line-height: 1.5;
-        }
-
-        /* Botão do WhatsApp */
-        .whatsapp-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #25D366; /* Verde Oficial do WhatsApp */
-            color: white;
-            text-decoration: none;
-            padding: 18px 35px;
-            border-radius: 50px;
-            font-size: 1.1em;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-            cursor: pointer;
-            border: none;
-            width: 100%;
-            max-width: 300px;
-        }
-
-        .whatsapp-button:hover {
-            background-color: #1ebc51;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
-        }
-
-        .whatsapp-icon {
-            width: 24px;
-            height: 24px;
-            margin-right: 12px;
-            fill: white;
-        }
-
-        .security-note {
-            margin-top: 20px;
-            font-size: 0.8em;
-            color: #999;
-        }
-
-        .company-info {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            font-size: 0.9em;
-            color: #666;
-            line-height: 1.8;
-        }
-
-        .company-info p {
-            margin: 5px 0;
-        }
-
-        .company-info strong {
-            color: #0E2F44;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 40px 25px;
-            }
-            h1 { font-size: 1.5em; }
-        }
-    </style>
+    <meta name="description" content="AG Soluções & Viagens — agência de viagens: pacotes, roteiros personalizados e suporte completo para sua próxima viagem.">
+    <meta property="og:title" content="AG Soluções & Viagens">
+    <meta property="og:description" content="Sua próxima viagem, planejada do jeito certo. Pacotes, roteiros personalizados e suporte durante toda a viagem.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agencia.romualdoag.com.br/">
+    <meta property="og:image" content="https://agencia.romualdoag.com.br/assets/img/logo.png">
+    <title>AG Soluções & Viagens — Agência de Viagens</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container">
-        
-        <div class="logo-area">
-            <img src="AG Solucoes.jpg" alt="Logo AG Soluções & Viagens" class="logo-img">
-        </div>
 
-        <h1>Tecnologia e Turismo<br>em um só lugar.</h1>
-        <p class="subtitle">Soluções inteligentes para sua viagem corporativa e pessoal.</p>
-        
-        <button id="contact-btn" class="whatsapp-button" aria-label="Iniciar conversa no WhatsApp">
-            <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-            </svg>
-            Fale Conosco
-        </button>
-        <div class="security-note">Atendimento seguro via WhatsApp</div>
-        
-        <div class="company-info">
-            <p><strong>CNPJ:</strong> 50.412.734/0001-56</p>
-            <p><strong>Email:</strong> agencia@romualdoag.com.br</p>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#" class="brand" aria-label="AG Soluções &amp; Viagens — início">
+                <picture>
+                    <source srcset="assets/img/logo.webp" type="image/webp">
+                    <img src="assets/img/logo.png" alt="AG Soluções &amp; Viagens" width="130" height="70">
+                </picture>
+            </a>
+            <nav aria-label="Navegação principal">
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <script>
-        // Script de Ofuscação
-        // Divide o número em partes para que robôs de busca simples não identifiquem como telefone
-        document.getElementById('contact-btn').addEventListener('click', function() {
-            // Partes do número:
-            const country = "55";
-            const ddd = "27";
-            const part1 = "99811";
-            const part2 = "4153";
-            
-            // Mensagem opcional (codificada para URL)
-            const message = encodeURIComponent("Olá, gostaria de saber mais sobre a AG Soluções & Viagens.");
-            
-            // Monta o link final
-            const finalUrl = `https://wa.me/${country}${ddd}${part1}${part2}?text=${message}`;
-            
-            // Abre em nova aba
-            window.open(finalUrl, '_blank');
-        });
-    </script>
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <h1>Sua próxima viagem,<br>planejada do jeito certo.</h1>
+                <p class="hero-subtitle">Pacotes, roteiros personalizados e suporte de verdade — do embarque à volta pra casa.</p>
+                <button type="button" class="btn-whatsapp js-whatsapp" aria-label="Iniciar conversa no WhatsApp">
+                    <svg class="icon-whatsapp" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Planejar minha viagem
+                </button>
+            </div>
+        </section>
+
+        <section id="servicos" class="services">
+            <h2>Como podemos ajudar</h2>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">✈️</div>
+                    <h3>Pacotes de viagem</h3>
+                    <p>Passagens, hospedagem e passeios em um pacote só, no seu orçamento — sem dor de cabeça na hora de montar tudo.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">🗺️</div>
+                    <h3>Roteiros personalizados</h3>
+                    <p>Viagem com a sua cara: roteiro desenhado para o seu ritmo, seus interesses e as pessoas que vão com você.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">🛟</div>
+                    <h3>Suporte durante a viagem</h3>
+                    <p>Imprevisto acontece. Atendimento ágil pelo WhatsApp antes, durante e depois da viagem — resposta rápida, de gente de verdade.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre" class="about">
+            <h2>Sobre a AG</h2>
+            <p>A AG Soluções &amp; Viagens é uma agência de viagens que une atendimento próximo com agilidade de tecnologia. Cuidamos do planejamento completo da sua viagem de lazer — da escolha do destino ao suporte no retorno — para você só se preocupar em aproveitar.</p>
+        </section>
+
+        <section id="contato" class="contact">
+            <h2>Fale com a gente</h2>
+            <p>Atendimento direto, sem robô. Escolha o canal:</p>
+            <div class="contact-actions">
+                <button type="button" class="btn-whatsapp js-whatsapp" aria-label="Conversar no WhatsApp">
+                    <svg class="icon-whatsapp" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Chamar no WhatsApp
+                </button>
+                <button type="button" id="email-btn" class="btn-email" aria-label="Mostrar endereço de e-mail">
+                    Mostrar e-mail
+                </button>
+            </div>
+            <noscript>
+                <p class="noscript-note">Ative o JavaScript para ver nossos contatos.</p>
+            </noscript>
+            <!-- honeypot: endereço falso para poluir listas de scrapers -->
+            <a href="mailto:atendimento@viagens-ag-brasil.com" class="hp" aria-hidden="true" tabindex="-1">atendimento@viagens-ag-brasil.com</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p><strong>AG Soluções &amp; Viagens</strong></p>
+        <p>CNPJ: 50.412.734/0001-56</p>
+    </footer>
+
+    <script src="assets/js/contact.js"></script>
 </body>
 </html>
