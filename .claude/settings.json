@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(node tests/contact.test.js)",
+      "Bash(python -m http.server:*)"
+    ]
+  }
+}
